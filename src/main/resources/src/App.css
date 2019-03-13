@@ -1,0 +1,150 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4 {
+  color: rgb(88, 103, 155);
+  font-family: "PT Mono", monospace;
+}
+
+strong {
+  color: rgb(148, 90, 118);
+}
+
+table {
+  margin-bottom: 1em;
+  width: 100%;
+}
+th, td {
+  border: 1px solid white;
+  padding: .25em;
+}
+a {
+  color: rgb(222, 183, 206);
+  text-decoration: underline;
+}
+a:hover {
+  color: rgb(221, 135, 187);
+  text-decoration: none;
+}
+
+.animation-container {
+  background: url('img/nebula-360.jpg') repeat 0 0;
+  background-size: cover;
+  box-sizing: border-box;
+  height: 100%;
+  left: 0;
+  margin: 0;
+  padding: 2em 0 0 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  -webkit-animation: slide 450s linear infinite;
+}
+
+.container {
+  padding: 0;
+  position: relative;
+}
+
+.header {
+  height: 74px;
+}
+
+.logo {
+  background: rgb(148, 90, 118);
+  border: 0;
+  border-top-left-radius: .25em;
+  color: black;
+  display: inline-block;
+  float: left;
+  font-family: 'Patua One', cursive;
+  font-size: 3em;
+  font-weight: bold;
+  line-height: 74px;
+  mix-blend-mode: screen;
+  padding: 0 .5em;
+}
+
+.controls {
+  float: right;
+  font-family: "PT Mono", sans-serif;
+  height: 74px;
+}
+
+.controls--input {
+  float: left;
+  padding-left: 1em;
+}
+
+.controls--input label {
+  background: rgb(148, 90, 118);
+  color: white;
+  float: left;
+  font-size: .5em;
+  margin: 0;
+  padding: .2em;
+  text-transform: lowercase;
+}
+
+.controls--input input {
+  background: transparent;
+  border: 2px solid rgb(148, 90, 118);
+  clear: left;
+  color: white;
+  float: left;
+  font-size: 1.25em;
+  line-height: 1.5em;
+  padding: 0 .2em;
+  width: 200px;
+}
+
+.content {
+  clear: both;
+  font-family: "PT Mono", sans-serif;
+}
+.col .widget {
+  background: rgb(27, 25, 33);
+  color: white;
+  margin: .25em 0;
+  padding: 1em;
+}
+
+.error-label {
+  background: rgb(148, 90, 118);
+  display: block;
+  color: white;
+  position: absolute;
+  padding: .25em;
+}
+
+#footer {
+  font-size: .75em;
+  text-align: center;
+}
+
+@-webkit-keyframes slide {
+
+  .content::before {
+    background-image: linear-gradient(
+            to right,
+            rgb(148, 90, 118),
+            rgb(203, 154, 159),
+            rgb(107, 109, 140),
+            rgb(88, 103, 158)
+    );
+    content: "";
+    display: block;
+    height: .2em;
+  }
+
+  from {
+    background-position: 0 0;
+  }
+
+  to {
+    background-position: -4096px 0;
+  }
+
+}
